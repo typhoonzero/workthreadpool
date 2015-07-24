@@ -22,7 +22,7 @@ int WorkThreadPool::SendMessage(const string &msg) {
 
 void WorkThreadPool::Worker() {
   unsigned int msg_count = 0;
-  while (1) {
+  while (true) {
     string msg = msg_queue_.pop();
     if (msg.empty()) {
       printf("no msg got, sleep for 0.1 sec\n");
