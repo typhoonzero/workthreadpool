@@ -5,9 +5,9 @@ Lightweight non-locking thread pool for multi-threading work jobs..
 ## Usage
 
 ```c++
-#include "workthreadpool.h"
 #include <sstream>
 #include <math.h>
+#include "workthreadpool.h"
 
 class MyThreadPool : public bfd::WorkThreadPool {
  public:
